@@ -1,0 +1,21 @@
+.inner_footer{
+  padding-bottom: 50px;
+}
+.foot_menu{
+  display: flex;
+  justify-content: space-between;
+}
+.ft_wrap{
+  flex: 1;
+}
+.ft_title{
+  cursor: pointer;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.ft_menu_list a{
+  display: block;
+  width: 100%;
+  color: #202020;
+  padding-bottom: 10px;
+}

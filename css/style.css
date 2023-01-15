@@ -1,0 +1,139 @@
+@import url(common/header.css);
+@import url(common/footer.css);
+@import url(main1.css);
+@import url(main2.css);
+@import url(main3.css);
+@import url(main4.css);
+@import url(main5.css);
+/* NOTIC 페이지 */
+@import url(notice.css);
+@import url(notice_view.css);
+@import url(notice_new.css);
+@import url(notice_up.css);
+/* Q&A 페이지 */
+@import url(qna.css);
+@import url(qna_new.css);
+@import url(qna_up.css);
+/* FAQ 페이지 */
+@import url(faq.css);
+@import url(faq_new.css);
+@import url(faq_up.css);
+/* 로그인 조인 */
+@import url(join.css);
+@import url(login.css);
+/* 구글 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+html{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+}
+body{
+  color: #202020;
+}
+button{
+  font-family: 'Noto Sans KR', sans-serif;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform : uppercase;
+}
+.w1760{
+  width: 100%;
+  max-width: 1760px;
+  margin: 0 auto;
+}
+.mt100{
+  margin-top: 100px;
+}
+.mt40{
+  margin-top: 40px;
+}
+.mt20{
+  margin-top: 20px;
+}
+
+/* 탑버튼 */
+#topBtn{
+  width: 45px;
+  height: 45px;
+  border-radius: 14%;
+  background-color: #202020;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0;
+  position: fixed;
+  right: 1rem; bottom:0px;
+  transition: 1.5s;
+  cursor: pointer;
+  background-image: url(../img/arrow_top.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80%;
+}
+
+#topBtn.topbtnactive{
+  opacity: 1;
+  bottom:4rem;
+}
+
+/* 모바일 */
+@media only screen and (max-width:1760px){
+  .w1760{
+    max-width: 1240px;
+  }
+}
+
+@media only screen and (max-width:1280px){
+  html{
+    font-size: 17px;
+  }
+  .w1760{
+    max-width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width:1000px){
+  .mt100{
+    margin-top: 80px;
+  }
+  .mt40{
+    margin-top: 30px;
+  }
+  .mt20{
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width:769px){
+  html{
+    font-size: 16px;
+  }
+  /* 탑버튼 */
+  #topBtn{
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    background-size: 70%;
+  }
+  #topBtn.topbtnactive{
+    bottom:2rem;
+  }
+}
+
+@media only screen and (max-width:500px){
+  html{
+    font-size: 14px;
+  }
+  .mt100{
+    margin-top: 50px;
+  }
+  .mt40{
+    margin-top: 20px;
+  }
+}

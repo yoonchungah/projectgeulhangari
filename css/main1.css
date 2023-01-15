@@ -1,0 +1,162 @@
+/* 섹션1 */
+.section1{
+  width: 100%;
+  height: 100vh;
+}
+.sec1banner {
+  width: 100%;
+  height: 100%;
+}
+.sec1banner>.swiper-wrapper>.swiper-slide{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.sec1banners{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* 배너 이미지 */
+.sec1banner1{
+  background-image: url(../img/bg1.png);
+}
+.sec1banner2{
+  background-image: url(../img/bg2.png);
+}
+.sec1banner3{
+  background-image: url(../img/bg3.png);
+}
+/* 배너 텍스트 */
+.banner_txt{
+  position: absolute;
+  z-index: 9999;
+  top:15rem; left: 15.9%;
+}
+.author_name{
+  font-size: 30px;
+  color: #f6f6f6;
+}
+.book_title{
+  font-size: 53px;
+  margin: 20px 0 50px;
+  font-weight: bold;
+  color: #f6f6f6;
+}
+.book_cont{
+  margin-bottom: 20px;
+  color: #f6f6f6;
+}
+.banner_txt a{
+  color: #f6f6f6;
+  font-weight: bold;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sec1banner3 .author_name{
+  color: #202020;
+}
+.sec1banner3 .book_title{
+  color: #202020;
+}
+.sec1banner3 .book_title{
+  color: #202020;
+}
+.sec1banner3 .book_cont{
+  color: #202020;
+}
+.sec1banner3 .banner_txt a{
+  color: #202020;
+}
+
+/* 페이지 네이션 */
+.sec1banner .swiper-pagination{
+  font-size: 0px;
+}
+.sec1banner span.swiper-pagination-current{
+  font-size: 53px;
+  font-weight: bold;
+  color: #f6f6f6;
+  position: absolute;
+  left: 5.125rem;
+  bottom: 0px;
+}
+.sec1banner span.swiper-pagination-total{
+  font-size: 53px;
+  font-weight: bold;
+  color: #f6f6f6;
+  position: absolute;
+  right: 5.125rem;
+  bottom: 0px;
+}
+
+/* 1280에서 기본폰트 사이즈 16 */
+
+@media (max-width:769px){
+   /* 배너 이미지 */
+  .sec1banner1{
+    background-image: url(../img/m_bg01.png);
+  }
+  .sec1banner2{
+    background-image: url(../img/m_bg02.png);
+  }
+  .sec1banner3{
+    background-image: url(../img/m_bg03.png);
+  }
+  /* 배너 텍스트 */
+  .banner_txt{
+    top:20rem; left: 10%;
+  }
+  .author_name{
+    font-size: 25px;
+  }
+  .book_title{
+    font-size: 40px;
+    margin: 10px 0 30px;
+  }
+  /* 페이지 네이션 */
+  .sec1banner span.swiper-pagination-current{
+    font-size: 40px;
+    left: 2rem;
+  }
+  .sec1banner span.swiper-pagination-total{
+    font-size: 40px;
+    right: 2rem;
+  }
+}
+
+@media only screen and (max-width:500px){
+  /* 배너 텍스트 */
+  .author_name{
+    font-size: 18px;
+  }
+  .book_title{
+    font-size: 32px;
+  }
+  /* 페이지 네이션 */
+  .sec1banner span.swiper-pagination-current{
+    font-size: 32px;
+  }
+  .sec1banner span.swiper-pagination-total{
+    font-size: 32px;
+  }
+}
+
+@media (max-width:468px){
+  /* 배너 텍스트 */
+  .author_name{
+    font-size: 18px;
+    color: #f6f6f6;
+  }
+  .book_title{
+    font-size: 24px;
+  }
+}

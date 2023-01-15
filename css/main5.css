@@ -1,0 +1,69 @@
+/* 섹션4 */
+.section5 {
+  width: 100%;
+  padding-bottom: 100px;
+  background-color: #202020;
+  color: #f6f6f6;
+}
+/* AUTHOR 타이틀 */
+.sec5_title h2 {
+  font-size: 96px;
+  font-weight: bold;
+  margin-left: 15.9%;
+}
+
+
+/* 노트 리스트 */
+.note_list_wrap{
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top:0;
+  overflow: hidden;
+}
+.note_list{
+  width: 22%;
+  box-sizing: border-box;
+}
+.note_list_2{
+  margin: 0 3%;
+}
+/* 노트 이미지 */
+.note_list .note_img{
+  width: 100%;
+}
+.note_list .note_img a{
+  display: block;
+  width: 100%;
+}
+.note_list .note_img img{
+  display: block;
+  width: 100%;
+}
+/* 노트 텍스트 */
+.note_list .aditer_name{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.note_list .aditer_title{
+  margin-top: 10px;
+  font-size: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.note_list .aditer_cont{
+  word-break: break-all;
+}
+
+
+/* 버튼 */
+.sec5_btn{
+  text-align: right;
+}
+.sec5_btn .more_btn{
+  background-color: transparent;
+  font-size: 53px;
+  color: #f6f6f6;
+}
