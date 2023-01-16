@@ -32,6 +32,7 @@ function booksTab3(){
 }
 
 //섹션3 미디어쿼리 스와이퍼
+window.addEventListener("resize", tabListbtn);
 function tabListbtn(){
   let tabBtn1 = document.querySelector('.tab_list_1_btn');
   let tabBtn2 = document.querySelector('.tab_list_2_btn');
@@ -44,7 +45,7 @@ function tabListbtn(){
       tabBtn1.classList.add('btn_active');
       tabBtn2.classList.remove('btn_active');
       tabBtn3.classList.remove('btn_active');
-     })
+      })
     tabBtn2.addEventListener('click',()=>{
       document.querySelector('.tab_lists').style.transform =
       'translate(-100vw)';
@@ -64,7 +65,7 @@ function tabListbtn(){
       'translate(0vw)';
   }
 }
-tabListbtn()
+
 
 //섹션4 마우스이벤트
 let Profile = document.querySelectorAll('.author_profile');
