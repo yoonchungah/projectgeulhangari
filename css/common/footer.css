@@ -1,5 +1,9 @@
 .inner_footer{
+  max-width: 1760px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   padding-bottom: 50px;
+  background-color: pink;
 }
 .foot_menu{
   display: flex;
