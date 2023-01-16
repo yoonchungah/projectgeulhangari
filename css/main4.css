@@ -59,3 +59,84 @@
   font-size: 53px;
   color: #202020;
 }
+
+@media only screen and (max-width:1760px){
+  /* 작가 */
+  .author_list li{
+    width: calc(20% - 15px);
+  }
+  .author_profile{
+    font-size: 18px;
+  }
+}
+@media (max-width:1480px){
+  /* AUTHOR 타이틀 */
+  .sec4_title h2 {
+    font-size: 53px;
+  }
+  /* 버튼 */
+  .sec4_btn .more_btn{
+    font-size: 35px;
+  }
+}
+@media (max-width:1280px){
+  /* 작가 */
+  .author_list li{
+    width: calc(25% - 15px);
+  }
+  .author_list li:last-child{
+    display: none;
+  }
+}
+@media (max-width:1000px){
+  /* 작가 */
+  .author_list li{
+    width: calc(33% - 15px);
+  }
+  .author_list li:nth-child(4){
+    display: none;
+  }
+}
+@media (max-width:769px){
+  /* books타이틀 */
+  .sec4_title h2 {
+    margin-left: 10%;
+  }
+  /* 작가 */
+  .author_list li{
+    width: calc(50% - 15px);
+  }
+  .author_list li:nth-child(3){
+    display: none;
+  }
+  .author_profile{
+    font-size: 16px;
+  }
+  .author_books{
+    font-size: 14px;
+  }
+  /* 버튼 */
+  .sec4_btn .more_btn{
+    font-size: 30px;
+  }
+}
+
+@media (max-width:468px){
+  /* books타이틀 */
+  .sec4_title h2 {
+    font-size: 40px;
+  }
+  /* 작가 */
+  .author_list {
+    justify-content: center;
+  }
+  .author_list li{
+    width: calc(100% - 15px);
+  }
+  .author_list li:nth-child(2){
+    display: none;
+  }
+  .author_profile{
+    top: 95%;
+  }
+}
