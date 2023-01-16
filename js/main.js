@@ -32,12 +32,39 @@ function booksTab3(){
 }
 
 //섹션3 미디어쿼리 스와이퍼
+let tabBtn1 = document.querySelector('.tab_list_1_btn');
+let tabBtn2 = document.querySelector('.tab_list_2_btn');
+let tabBtn3 = document.querySelector('.tab_list_3_btn');
+
+if( 1100 > window.innerWidth ){
+  tabBtn1.addEventListener('click',()=>{
+    document.querySelector('.tab_lists').style.transform =
+    'translate(0vw)';
+    tabBtn1.classList.add('btn_active');
+    tabBtn2.classList.remove('btn_active');
+    tabBtn3.classList.remove('btn_active');
+    })
+  tabBtn2.addEventListener('click',()=>{
+    document.querySelector('.tab_lists').style.transform =
+    'translate(-100vw)';
+    tabBtn1.classList.remove('btn_active');
+    tabBtn2.classList.add('btn_active');
+    tabBtn3.classList.remove('btn_active');
+  })
+  tabBtn3.addEventListener('click',()=>{
+    document.querySelector('.tab_lists').style.transform =
+    'translate(-200vw)';
+    tabBtn1.classList.remove('btn_active');
+    tabBtn2.classList.remove('btn_active');
+    tabBtn3.classList.add('btn_active');
+  })
+} else{
+  document.querySelector('.tab_lists').style.transform =
+    'translate(0vw)';
+}
+
 window.addEventListener("resize", tabListbtn);
 function tabListbtn(){
-  let tabBtn1 = document.querySelector('.tab_list_1_btn');
-  let tabBtn2 = document.querySelector('.tab_list_2_btn');
-  let tabBtn3 = document.querySelector('.tab_list_3_btn');
-
   if( 1100 > window.innerWidth ){
     tabBtn1.addEventListener('click',()=>{
       document.querySelector('.tab_lists').style.transform =
@@ -65,7 +92,6 @@ function tabListbtn(){
       'translate(0vw)';
   }
 }
-
 
 //섹션4 마우스이벤트
 let Profile = document.querySelectorAll('.author_profile');
