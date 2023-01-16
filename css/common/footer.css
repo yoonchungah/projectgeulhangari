@@ -1,25 +1,42 @@
 .inner_footer{
   max-width: 1760px;
   padding-left: 1.25rem;
-  padding-right: 1.25rem;
   padding-bottom: 50px;
-  background-color: pink;
 }
 .foot_menu{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .ft_wrap{
   flex: 1;
+  padding-left: 1.25rem;
 }
 .ft_title{
   cursor: pointer;
   font-size: 30px;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 .ft_menu_list a{
   display: block;
   width: 100%;
   color: #202020;
   padding-bottom: 10px;
+}
+.foot_adree{
+  padding-right: 1.25rem;
+}
+
+@media (max-width:769px){
+  .foot_menu{
+    flex-direction: column;
+  }
+  .ft_wrap{
+    padding-left: 0;
+    padding-bottom: 50px;
+  }
+  .ft_title{
+    font-size: 25px;
+  }
 }
