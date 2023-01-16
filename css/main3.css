@@ -9,8 +9,6 @@
   font-weight: bold;
   margin-left: 15.9%;
 }
-
-
 /* 탭 영역 */
 /* 탭 리스트 */
 .tab_lists{
@@ -131,7 +129,7 @@
   }
   .tab_list{
     width: 100vw;
-    transform : translateX(50vw);
+    transform : translateX(45vw);
   }
   .tab_list_2{
     margin: 0;
@@ -166,7 +164,7 @@
 @media (max-width:769px){
   /* books타이틀 */
   .sec3_title h2{
-    margin-left: 10%;
+    margin-left: 7%;
   }
   /* 탭 콘트 */
   .tab_cont{
@@ -193,6 +191,10 @@
   /* books타이틀 */
   .sec3_title h2{
     font-size: 40px;
+  }
+  /* 탭 리스트 */
+  .tab_list{
+    transform : translateX(30vw);
   }
   /* 북텍스트 */
   .tab_list .books_title{

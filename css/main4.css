@@ -100,7 +100,7 @@
 @media (max-width:769px){
   /* books타이틀 */
   .sec4_title h2 {
-    margin-left: 10%;
+    margin-left: 7%;
   }
   /* 작가 */
   .author_list li{
@@ -108,12 +108,6 @@
   }
   .author_list li:nth-child(3){
     display: none;
-  }
-  .author_profile{
-    font-size: 16px;
-  }
-  .author_books{
-    font-size: 14px;
   }
   /* 버튼 */
   .sec4_btn .more_btn{
@@ -137,6 +131,17 @@
     display: none;
   }
   .author_profile{
-    top: 95%;
+    top: 92%;
+    font-size: 20px;
+  }
+  .author_books{
+    font-size: 14px;
+  }
+}
+@media (max-width:360px){
+  /* 작가 */
+  .author_profile{
+    top: 92%;
+    font-size: 16px;
   }
 }

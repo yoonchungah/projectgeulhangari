@@ -41,7 +41,7 @@
   height: 100%;
 }
 .sec_right_txt{
-  padding: 100px 80px 0;
+  padding: 10% 8% 0;
 }
 .sec_right_txt h3{
   font-size: 53px;
@@ -89,9 +89,6 @@
     font-size: 40px;
   }
   /* 섹션2 right */
-  .sec_right_txt{
-    padding: 90px 50px 0;
-  }
   .sec_right_txt h3{
     font-size: 40px;
   }
@@ -156,7 +153,11 @@
 @media (max-width:468px){
   /* 섹션2 left */
   .sec_left{
-    height: 75vh;
+    height: 70vh;
+  }
+  .sec_left_img{
+    width: 250px;
+    height: 350px;
   }
   .sec_left_txt p{
     font-size: 24px;
