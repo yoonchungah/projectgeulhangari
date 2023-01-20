@@ -1,0 +1,26 @@
+<div class="login_wrap w1760 mt100">
+  <h3>LOGIN</h3>
+  <form method="post" action="/writelogin" id="login_form">
+    <div class="login_cont">
+      <!-- 아이디 -->
+      <div class="user_id_box">
+        <label for="user_id">아이디</label>
+        <input type="text" name="user_id" id="user_id" placeholder="아이디를 입력하세요">
+      </div>
+      <!-- 비밀번호 -->
+     <div class="user_pw_box">
+        <label for="user_pw">비밀번호</label>
+        <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호를 입력하세요">
+     </div>
+      <!-- 로그인 -->
+      <div class="login_btn_box mt40">
+        <button type="submit" id="login_btn">로그인</button>
+        <ul>
+           <li><a href="#">아이디찾기</a></li>
+           <li><a href="#">비밀번호찾기</a></li>
+        </ul>
+        <button type="button" id="join_btn" onclick="location.href='join'">회원가입</button>
+      </div>
+    </div>
+  </form>
+</div>

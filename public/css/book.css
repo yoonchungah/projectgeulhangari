@@ -1,0 +1,121 @@
+.books_wrap{
+  padding-top: 71px;
+  display: flex;
+  box-sizing: border-box;
+}
+.boos_wrap_left{
+  width:50%;
+}
+/* 고정 메뉴 */
+.books_fixed_menu{
+  position: fixed;
+}
+.books_fixed_menu ul li{
+  padding-bottom: 20px;
+}
+.books_fixed_menu ul li a{
+  color: #202020;
+  font-size: 30px;
+  font-weight: bold;
+}
+.boos_wrap_right{
+  width:50%;
+}
+/* 신간 리스트 */
+.new_book_img{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.new_book_img a{
+  width: 90%;
+  background-color: #d9d9d9;
+  text-align: center;
+  margin-right: 5%;
+}
+.new_book_img img{
+  width: 80%;
+  text-align: center;
+}
+.new_book_img a:nth-child(even){
+  padding: 1% 0;
+  margin-right: 0;
+}
+.new_book_cont{
+  margin-top: 10px;
+}
+.new_book_cont p:first-child{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.new_book_cont p:last-child{
+  font-size: 16px;
+}
+.new_book_cont p span{
+  margin-left: 2%;
+  font-size: 16px;
+}
+
+/* 모바일 */
+@media only screen and (max-width:1280px) {
+  .books_wrap{
+    padding-top: 67px;
+  }
+}
+@media only screen and (max-width:1000px) {
+  .new_book_cont p:first-child{
+    font-size: 17px;
+  }
+  /* 신간 리스트 */
+  .new_book_cont p:last-child{
+    font-size: 15px;
+  }
+  .new_book_cont p span{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width:769px) {
+  .books_wrap{
+    padding-top: 66px;
+    flex-wrap: wrap;
+  }
+  .boos_wrap_left{
+    width:100%;
+  }
+  .boos_wrap_right{
+    width:100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* 고정메뉴 */
+  .books_fixed_menu{
+    position: static;
+  }
+  /* 신간 리스트 */
+  .new_book_img a{
+    margin-right: 2%;
+  }
+  .new_book_cont p:last-child{
+    font-size: 14px;
+  }
+  .new_book_cont p span{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width:500px){
+  .books_wrap{
+    padding-top: 60px;
+  }
+  .books_fixed_menu ul li a{
+    font-size: 18px;
+  }
+  .new_book_cont p:first-child{
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width:420px){
+  .books_wrap{
+    padding-top: 45px;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="up_notice_wrap w1760 mt100">
+  <h3>NOTICE 수정하는 페이지</h3>
+  <form method="post" action="/upNotice" id="up_notice_form">
+    <div>
+        <input type="hidden" name="up_notice_num" class="up_notice_num">
+    </div>
+    <div class="up_notice_day_box">
+        <p>날짜</p>
+        <input type="text" name="up_notice_day" class="up_notice_day">
+    </div>
+    <div class="up_notice_view_box">
+        <p>조회수</p>
+        <input type="text" name="up_notice_view" class="up_notice_view">
+    </div>
+    <div class="up_notice_name_box">
+        <p>작성자</p>
+        <input type="text" name="up_notice_name" class="up_notice_name">
+    </div>
+    <div class="up_notice_title_box">
+        <p>제목</p>
+        <input type="text" name="up_notice_title" class="up_notice_title">
+    </div>
+    <div class="up_notice_cont_box">
+        <textarea name="up_notice_cont" class="up_notice_cont"></textarea>
+    </div>
+    <div class="up_notice_btn_box mt40">
+        <button type="reset" value="취소" class="up_notice_reset">취소</button>
+        <button type="submit" value="수정완료" class="up_notice_check">수정완료</button>
+    </div>
+  </form>
+</div>

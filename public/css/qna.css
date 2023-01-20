@@ -1,0 +1,182 @@
+.qna_list_wrap{
+  padding-top: 71px;
+}
+.qna_list_wrap h3{
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 2px solid #202020;
+  padding-bottom: 40px;
+}
+/* 리스트 타이틀 */
+.qna_list_title ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9d9d9;
+}
+.qna_list_title ul li{
+  font-weight: bold;
+  text-align: center;
+  line-height: 65px;
+}
+.qna_list_num{
+  flex: 1;
+}
+.qna_list_cont{
+  flex: 3;
+}
+.qna_list_write{
+  flex: 1;
+}
+.qna_list_day{
+  flex: 1;
+}
+.qna_list_view{
+  flex: 1;
+}
+/* 리스트 바디 */
+.qna_list_body ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+.qna_list_body ul li{
+  font-size: 14px;
+  text-align: center;
+  line-height: 65px;
+  
+}
+.qna_list_body ul li:hover{
+  cursor: pointer;
+}
+/* 리스트 바디 콘트 */
+.qna_list_body .qna_list_content{
+  text-align: center;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .7s ease;
+}
+/* 글작성 버튼 */
+.write_qna_btn_box{
+  text-align: right;
+}
+#qna_write{
+  width: 100px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  background-color: #202020;
+  color: #f6f6f6;
+  cursor: pointer;
+}
+/* 글 삭제 수정 버튼 */
+.emend_delete_qna_btn_box{
+  text-align: right;
+}
+/* 수정버튼 */
+#qna_emend{
+  width: 60px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  background-color: #202020;
+  color: #f6f6f6;
+  cursor: pointer;
+}
+/* 삭제버튼 */
+#qna_delete{
+  width: 60px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #202020;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  color: #202020;
+  cursor: pointer;
+}
+/* 모바일 */
+@media only screen and (max-width:1280px) {
+  .qna_list_wrap{
+    padding-top: 67px;
+  }
+  .qna_list_title ul li{
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width:769px) {
+  .qna_list_wrap{
+    padding-top: 66px;
+  }
+  .qna_list_wrap h3{
+    font-size: 25px;
+  }
+  .qna_list_cont{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media only screen and (max-width:560px){
+  .qna_list_title ul li{
+    font-size: 14px;
+  }
+  .qna_list_body ul li{
+    font-size: 12px;
+  }
+  .qna_list_cont{
+    flex: 1;
+  }
+  #qna_write{
+    font-size: 12px;
+  }
+
+  /* 수정버튼 */
+  #qna_emend{
+    font-size: 12px;
+  }
+  /* 삭제버튼 */
+  #qna_delete{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width:500px){
+  .qna_list_wrap{
+    padding-top: 60px;
+  }
+}
+
+@media (max-width:420px){
+  .qna_list_wrap{
+    padding-top: 45px;
+  }
+}
+@media only screen and (max-width:410px){
+  .qna_list_title ul li{
+    font-size: 13px;
+    line-height: 40px;
+  }
+  .qna_list_body ul li{
+    font-size: 10px;
+    line-height: 40px;
+  }
+  #qna_write{
+    font-size: 10px;
+  }
+
+  /* 수정버튼 */
+  #qna_emend{
+    width: 40px;
+    font-size: 10px;
+  }
+  /* 삭제버튼 */
+  #qna_delete{
+    width: 40px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,178 @@
+.up_qna_wrap{
+  padding-top: 71px;
+}
+.up_qna_wrap h3{
+  border-bottom: 1px solid #202020;
+  padding-bottom: 10px;
+}
+/* 날짜 */
+.up_qna_day_box{
+  margin: 50px 0 20px;
+  display: flex;
+}
+.up_qna_day_box p{
+  width: 80px;
+  line-height: 30px;
+  text-align: left;
+}
+.up_qna_day_box .up_qna_day{
+  width: 300px;
+}
+/* 조회수 */
+.up_qna_view_box{
+  margin-bottom: 20px;
+  display: flex;
+}
+.up_qna_view_box p{
+  width: 80px;
+  line-height: 30px;
+  text-align: left;
+}
+.up_qna_view_box .up_qna_view{
+  width: 300px;
+}
+/* 작성자 */
+.up_qna_name_box{
+  display: flex;
+}
+.up_qna_name_box p{
+  width: 80px;
+  line-height: 30px;
+  text-align: left;
+}
+.up_qna_name_box .up_qna_name{
+  width: 300px;
+}
+/* 제목 */
+.up_qna_title_box{
+  margin: 20px 0 50px;
+  display: flex;
+}
+.up_qna_title_box p{
+  width: 80px;
+  line-height: 30px;
+  text-align: left;
+}
+.up_qna_title_box .up_qna_title{
+  width: 300px;
+}
+/* 내용 */
+.up_qna_cont_box .up_qna_cont{
+  width: 100%;
+  height: 300px;
+}
+/* 버튼 */
+.up_qna_btn_box{
+  text-align: right;
+}
+.up_qna_btn_box>button{
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+}
+.up_qna_btn_box>.up_qna_reset{
+  margin-right:10px;
+  background-color: #f6f6f6;;
+  color: #202020;
+  cursor: pointer;
+}
+.up_qna_btn_box>.up_qna_check{
+  background-color: #202020;
+  color: #f6f6f6;
+  cursor: pointer;
+}
+ 
+/* 모바일 */
+@media only screen and (max-width:1280px) {
+  .up_qna_wrap{
+    padding-top: 67px;
+  }
+}
+@media only screen and (max-width:769px) {
+  .up_qna_wrap{
+    padding-top: 66px;
+  }
+}
+@media only screen and (max-width:560px) {
+  /* 날짜 */
+  .up_qna_day_box{
+    margin: 30px 0 10px;
+  }
+  .up_qna_day_box p{
+    font-size: 14px;
+    width: 50px;
+  }
+  .up_qna_day_box .up_qna_day{
+    width: 150px;
+  }
+  /* 조회수 */
+  .up_qna_view_box{
+    margin-bottom: 10px;
+  }
+  .up_qna_view_box p{
+    font-size: 14px;
+    width: 50px;
+  }
+  .up_qna_view_box .up_qna_view{
+    width: 150px;
+  }
+  /* 작성자 */
+  .up_qna_name_box p{
+    font-size: 14px;
+    width: 50px;
+  }
+  .up_qna_name_box .up_qna_name{
+    width: 150px;
+  }
+  /* 제목 */
+  .up_qna_title_box{
+    margin: 10px 0 30px;
+  }
+  .up_qna_title_box p{
+    font-size: 14px;
+    width: 50px;
+  }
+  .up_qna_title_box .up_qna_title{
+    width: 180px;
+  }
+ 
+  /* 버튼 */
+  .up_qna_btn_box>button{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width:500px){
+  .up_qna_wrap{
+    padding-top: 60px;
+  }
+}
+
+@media (max-width:420px){
+  .up_qna_wrap{
+    padding-top: 45px;
+  }
+}
+@media only screen and (max-width:410px) {
+  /* 날짜 */
+  .up_qna_day_box p{
+    font-size: 13px;
+  }
+  /* 조회수 */
+  .up_qna_view_box p{
+    font-size: 13px;
+  }
+  /* 작성자 */
+  .up_qna_name_box p{
+    font-size: 13px;
+  }
+  /* 제목 */
+  .up_qna_title_box p{
+    font-size: 13px;
+  }
+
+  /* 버튼 */
+  .up_qna_btn_box>button{
+    font-size: 10px;
+  }
+}
+

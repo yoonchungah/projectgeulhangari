@@ -1,0 +1,130 @@
+.notice_list_wrap{
+  padding-top: 71px;
+}
+.notice_list_wrap h3{
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 2px solid #202020;
+  padding-bottom: 40px;
+}
+/* 노티스 리스트 타이틀 */
+.notice_list_title ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9d9d9;
+}
+.notice_list_title ul li{
+  font-weight: bold;
+  text-align: center;
+  line-height: 65px;
+}
+.notice_list_num{
+  flex: 1;
+}
+.notice_list_cont{
+  flex: 3;
+}
+.notice_list_write{
+  flex: 1;
+}
+.notice_list_day{
+  flex: 1;
+}
+.notice_list_view{
+  flex: 1;
+}
+/* 노티스 리스트 바디 */
+.notice_list_body ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+.notice_list_body ul li{
+  font-size: 14px;
+  text-align: center;
+  line-height: 65px;
+}
+.notice_list_body ul li:hover{
+  cursor: pointer;
+}
+/* 글작성 버튼 */
+.write_notice_btn_box{
+  text-align: right;
+}
+#notice_write{
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  background-color: #202020;
+  color: #f6f6f6;
+}
+
+/* 모바일 */
+@media only screen and (max-width:1280px) {
+  .notice_list_wrap{
+    padding-top: 67px;
+  }
+  .notice_list_title ul li{
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width:769px) {
+  .notice_list_wrap{
+    padding-top: 66px;
+  }
+  .notice_list_wrap h3{
+    font-size: 25px;
+  }
+  .notice_list_cont{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .notice_list_body ul li{
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width:560px){
+  .notice_list_title ul li{
+    font-size: 14px;
+  }
+  .notice_list_body ul li{
+    font-size: 12px;
+  }
+  .notice_list_cont{
+    flex: 1;
+  }
+  /* 글작성 버튼 */
+  #notice_write{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .notice_list_wrap{
+    padding-top: 60px;
+  }
+}
+
+@media (max-width:420px){
+  .notice_list_wrap{
+    padding-top: 45px;
+  }
+}
+
+@media only screen and (max-width:410px){
+  .notice_list_title ul li{
+    font-size: 13px;
+    line-height: 40px;
+  }
+  .notice_list_body ul li{
+    font-size: 10px;
+    line-height: 40px;
+  }
+  /* 글작성 버튼 */
+  #notice_write{
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,143 @@
+.all_books_wrap{
+  padding-top: 71px;
+  display: flex;
+  box-sizing: border-box;
+}
+.all_book_left{
+  width:50%;
+}
+/* 고정 메뉴 */
+.books_fixed_menu{
+  position: fixed;
+}
+.books_fixed_menu ul li{
+  padding-bottom: 20px;
+}
+.books_fixed_menu ul li a{
+  color: #202020;
+  font-size: 30px;
+  font-weight: bold;
+}
+.all_book_right{
+  width:50%;
+}
+/* 모든 책 리스트 */
+.all_book_list ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.all_book_list li{
+  width: calc(50% - 10px);
+  text-align: center;
+  margin-bottom: 100px;
+}
+.all_book_img a{
+  width: 100%;
+  display: block;
+  background-color: #d9d9d9;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+.all_book_img img{
+  width: 70%;
+}
+.all_book_cont{
+  text-align: left;
+  margin-top: 10px;
+}
+.all_book_cont p{
+  display: inline-block;
+}
+.all_book_cont p:first-child{
+  font-size: 20px;
+  margin-right: 2%;
+}
+.all_book_cont p:last-child{
+  font-size: 16px;
+}
+/* 페이지 버튼 */
+.page_num ul{
+  display: flex;
+  justify-content: space-between;
+  max-width: 150px;
+}
+.page_num ul li{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #202020;
+  color: #f6f6f6;
+  cursor: pointer;
+}
+.page_num ul li.page_number_color{
+  background-color: #f6f6f6;
+  color: #202020;
+  border: 1px solid #202020;
+  box-sizing: border-box;
+}
+/* 모바일 */
+@media only screen and (max-width:1280px) {
+  .all_books_wrap{
+    padding-top: 67px;
+  }
+}
+@media only screen and (max-width:1000px) {
+  .all_book_list li{
+    margin-bottom: 80px;
+  }
+  .all_book_cont p:first-child{
+    font-size: 17px;
+  }
+  .all_book_cont p:last-child{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width:769px) {
+  .all_books_wrap{
+    padding-top: 66px;
+    flex-wrap: wrap;
+  }
+  .all_book_left{
+    width:100%;
+  }
+  .all_book_right{
+    width:100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* 고정메뉴 */
+  .books_fixed_menu{
+    position: static;
+  }
+}
+@media only screen and (max-width:500px){
+  .all_books_wrap{
+    padding-top: 60px;
+  }
+  .books_fixed_menu ul li a{
+    font-size: 18px;
+  }
+  .all_book_list li{
+    margin-bottom: 50px;
+  }
+  .all_book_cont{
+    margin-top: 5px;
+  }
+  /* 페이지 버튼 */
+  .page_num ul{
+    max-width: 120px;
+  }
+  .page_num ul li{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width:420px){
+  .all_books_wrap{
+    padding-top: 45px;
+  }
+}
