@@ -1,11 +1,7 @@
 function Validation(){
-    //아이디나 패스워드에 사용할수있는애가 a~z인데 대소문자 가능하고 0~9까지 숫자도 가능하다 문자는 4개에서 12개까지 사용가능하다
-   var RegExp = /^[a-zA-Z0-9]{4,12}$/; //id와 pwassword 유효성 검사 정규식
-   //이메일 유효성검사
-   //0~9까지 a~z까지 대소문자 가능하고 @가 들어가고 .도 들어간다 
+   var RegExp = /^[a-zA-Z0-9]{4,12}$/;
    var e_RegExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-   //이름은 가부터 힣까지 사용가능하고 2개에서 15개까지
-   var n_RegExp = /^[가-힣]{2,15}$/; //이름 유효성검사 정규식
+   var n_RegExp = /^[가-힣]{2,15}$/;
    
    var objId = document.getElementById("id"); //아이디
    var objPwd = document.getElementById("pw"); //비밀번호
@@ -14,7 +10,7 @@ function Validation(){
    var objEmail = document.getElementById("mail");//메일
 
 
-    // ================ ID 유효성검사 ================ //
+    // 아이디
     if(objId.value==''){
         alert("ID를 입력해주세요.");
         return false;
@@ -24,7 +20,7 @@ function Validation(){
         return false;
     }
 
-    // ================ PASSWORD 유효성검사 ===============//
+    // 비밀번호
     if(objPwd.value==''){ // 비밀번호 입력여부 검사
         alert("Password를 입력해주세요.");
         return false;
@@ -44,7 +40,7 @@ function Validation(){
     }
 
 
-    // ================ 이름 유효성검사 ================ //        
+    // 이름    
     if(objName.value ==''){
     alert("이름을 입력해주세요.");
     return false;
@@ -54,7 +50,7 @@ function Validation(){
         return false;
     }
 
-       // ================ email 유효성검사 ================ //
+    // 이메일
     if(e_RegExp.value == ''){ // 이메일 입력여부 검사
         alert("이메일을 입력해주세요.");
         return false;

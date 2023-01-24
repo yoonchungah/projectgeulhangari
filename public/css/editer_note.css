@@ -1,0 +1,77 @@
+.editer_note_wrap{
+ padding-top: 71px;
+ box-sizing: border-box;
+}
+.editer_note_list_wrap{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.editer_note{
+ width: 22%;
+ padding-bottom: 100px;
+ cursor: pointer;
+}
+.editer_note_img{
+ text-align: center;
+}
+.editer_note_img img{
+ width: 100%;
+}
+.edi_title{
+ font-weight: bold;
+ font-size: 20px;
+}
+.edi_cont{
+ display: none;
+}
+
+/* 모바일 */
+@media only screen and (max-width:1280px) {
+ .editer_note_wrap{
+   padding-top: 67px;
+ }
+}
+@media only screen and (max-width:1000px) {
+  .editer_note_list_wrap{
+    gap: 5%;
+    justify-content: flex-start;
+  }
+ .editer_note{
+    width: 30%;
+ }
+
+}
+@media only screen and (max-width:769px) {
+ .editer_note_wrap{
+    padding-top: 66px;
+ }
+ .editer_note_list_wrap{
+    gap: 0;
+    justify-content: space-between;
+ }
+ .editer_note{
+   width: 45%;
+   padding-bottom: 80px;
+ }
+ .edi_title{
+   font-size: 18px;
+ }
+}
+@media only screen and (max-width:500px){
+ .editer_note_wrap{
+   padding-top: 60px;
+ }
+ .editer_note{
+   width: 100%;
+ }
+ .edi_title{
+   font-size: 16px;
+ }
+}
+
+@media (max-width:420px){
+ .editer_note_wrap{
+   padding-top: 45px;
+ }
+}

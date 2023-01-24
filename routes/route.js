@@ -38,6 +38,16 @@ router.get('/new_books',(req, res) => {
   res.render('new_books'); 
 });
 
+//북 뷰어 페이지
+router.get('/book_view',(req, res) => {
+  res.render('book_view'); 
+});
+
+//에디터 노트 페이지
+router.get('/editer_note',(req, res) => {
+  res.render('editer_note'); 
+});
+
 //로그인페이지
 router.get('/login', (req, res) => {
   res.render('login');

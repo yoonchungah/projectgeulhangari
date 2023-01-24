@@ -127,12 +127,13 @@ observer.observe(noteWrap);
 
 //top 버튼
 let topBtn =  document.querySelector('#topBtn');
-
-if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
-  topBtn.classList.add('topbtnactive');
-} else{ 
-  topBtn.classList.remove('topbtnactive')
-}
+window.addEventListener('scroll',function(){
+  if (this.scrollY > 300){
+    topBtn.classList.add('topbtnactive');
+  } else{ 
+    topBtn.classList.remove('topbtnactive')
+  }
+})
 
 
 topBtn.addEventListener('click',(e)=>{

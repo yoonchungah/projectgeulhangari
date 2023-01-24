@@ -735,19 +735,19 @@
   width: 100%;
 }
 /* 노트 텍스트 */
-.note_list .aditer_name{
+.note_list .editer_name{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.note_list .aditer_title{
+.note_list .editer_title{
   margin-top: 10px;
   font-size: 30px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.note_list .aditer_cont{
+.note_list .editer_cont{
   word-break: break-all;
 }
 
@@ -823,7 +823,7 @@
     width: 85%;
   } 
   /* 노트 텍스트 */
-  .note_list .aditer_title{
+  .note_list .editer_title{
     font-size: 24px;
   }
 }

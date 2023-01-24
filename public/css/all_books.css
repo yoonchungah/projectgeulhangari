@@ -50,11 +50,23 @@
   display: inline-block;
 }
 .all_book_cont p:first-child{
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 2%;
 }
 .all_book_cont p:last-child{
-  font-size: 16px;
+  font-size: 20px;
+}
+/* 글작성 버튼 */
+.all_book_write_btn_box{
+  text-align: right;
+}
+/* 글쓰기버튼 */
+#all_book_write{
+  width: 60px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #202020;
+  color: #f6f6f6;
 }
 /* 페이지 버튼 */
 .page_num ul{
@@ -88,10 +100,10 @@
     margin-bottom: 80px;
   }
   .all_book_cont p:first-child{
-    font-size: 17px;
+    font-size: 15px;
   }
   .all_book_cont p:last-child{
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 @media only screen and (max-width:769px) {
