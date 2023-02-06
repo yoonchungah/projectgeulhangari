@@ -1,17 +1,11 @@
-var mysql      = require('mysql');
+var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'database-1.cbt0ajlvu182.ap-northeast-2.rds.amazonaws.com',
-  user     : 'root',
-  password : '12345eri',
-  database : 'geul',
-  dateStrings : 'date',
+  host: 'database-1.cbt0ajlvu182.ap-northeast-2.rds.amazonaws.com',
+  user: 'root',
+  password: '12345eri',
+  database: 'geul',
+  dateStrings: 'date',
 });
-
-
-connection.connect(function(err){
-  if (err) throw err;
-  console.log("connected!")
-})
 
 
 //회원가입
