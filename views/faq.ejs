@@ -10,28 +10,28 @@
         <li class="faq_list_view">조회수</li>
       </ul>
     </div>
+    <% rows.forEach((row,index)=>{  %>
     <div class="faq_list_body">
       <ul class="faq_list">
-        <li class="faq_list_num">1</li>
-        <li class="faq_list_cont">제목1제목1제목1제목1제목1제목1제목1제목1제목1</li>
-        <li class="faq_list_write">관리자</li>
-        <li class="faq_list_day">2022-12-15</li>
-        <li class="faq_list_view">1</li>
+        <li class="faq_list_num"><%= row.num %></li>
+        <li class="faq_list_cont"><%= row.title %></li>
+        <li class="faq_list_write"><%= row.wirte %></li>
+        <li class="faq_list_day"><%= row.create_time %></li>
+        <li class="faq_list_view"><%= row.view %></li>
       </ul>
       <div class="faq_list_content">
-          <p>
-            여기는 공지사항을 보여주는 페이지이다 내용~~냉무~~
-          </p>
+          <p><%= row.cont %></p>
         <!-- 수정,삭제버튼 -->
           <div class="emend_delete_faq_btn_box">
-            <button type="button" id="faq_emend">수정</button>
-            <button type="button" id="faq_delete">삭제</button>
+            <button type="button" id="faq_emend" onclick="javascript:location.href='/updateF?num=<%= row.num %>'">수정</button>
+            <button type="button" id="faq_delete" onclick="javascript:location.href='/deleteF?num=<%= row.num %>'">삭제</button>
           </div>
       </div>
     </div>
+    <% }); %>
       <!-- 글작성 버튼 -->
     <div class="write_faq_btn_box mt40">
-      <button type="button" id="faq_write">글쓰기</button>
+      <button type="button" id="faq_write" onclick="location.href='/faq_new'">글쓰기</button>
     </div>
   </article>
 </div>

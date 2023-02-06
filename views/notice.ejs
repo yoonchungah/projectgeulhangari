@@ -11,34 +11,20 @@
       </ul>
     </div>
     <div class="notice_list_body">
-      <ul class="notice_list">
-        <li class="notice_list_num">1</li>
-        <li class="notice_list_cont">1월달 배송 안내 공지</li>
-        <li class="notice_list_write">관리자</li>
-        <li class="notice_list_day">2023-01-05</li>
-        <li class="notice_list_view">1</li>
+      <% rows.forEach((row,index)=>{  %>
+      <ul class="notice_list"  onclick="javascript:location.href='/notice_view?num=<%= row.num %>'">
+        <li class="notice_list_num"><%= row.num %></li>
+        <li class="notice_list_cont"><%= row.title %></li>
+        <li class="notice_list_write"><%= row.wirte %></li>
+        <li class="notice_list_day"><%= row.Date %></li>
+        <li class="notice_list_view"><%= row.view %></li>
       </ul>
-
-      <ul class="notice_list">
-        <li class="notice_list_num">2</li>
-        <li class="notice_list_cont">2월달 배송 안내 공지</li>
-        <li class="notice_list_write">관리자</li>
-        <li class="notice_list_day">2023-01-05</li>
-        <li class="notice_list_view">2</li>
-      </ul>
-
-      <ul class="notice_list">
-        <li class="notice_list_num">3</li>
-        <li class="notice_list_cont">3월달 배송 안내 공지</li>
-        <li class="notice_list_write">관리자</li>
-        <li class="notice_list_day">2023-01-05</li>
-        <li class="notice_list_view">3</li>
-      </ul>
+      <% }); %>
     </div>
 
     <!-- 글작성 버튼 -->
     <div class="write_notice_btn_box mt40">
-     <button type="button" id="notice_write">글쓰기</button>
+     <button type="button" id="notice_write" onclick="javascript:location.href='/notice_new'">글쓰기</button>
     </div>  
   </article>
 </div>

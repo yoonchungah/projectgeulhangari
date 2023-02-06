@@ -2,29 +2,29 @@
   <h3>QNA 수정 페이지</h3>
   <form method="post" action="/upQaq" id="up_qna_form">
     <div>
-        <input type="hidden" name="up_qna_num" class="up_qna_num">
+        <input type="hidden" name="up_qna_num" class="up_qna_num" value="<%= row.num %>">
     </div>
     <div class="up_qna_day_box">
         <p>날짜</p>
-        <input type="text" name="up_qna_day" class="up_qna_day">
+        <input type="text" name="up_qna_day" class="up_qna_day" value="<%= row.create_time %>">
     </div>
     <div class="up_qna_view_box">
         <p>조회수</p>
-        <input type="text" name="up_qna_view" class="up_qna_view">
+        <input type="text" name="up_qna_view" class="up_qna_view" value="<%= row.view %>">
     </div>
     <div class="up_qna_name_box">
         <p>작성자</p>
-        <input type="text" name="up_qna_name" class="up_qna_name">
+        <input type="text" name="up_qna_name" class="up_qna_name" value="<%= row.wirte %>">
     </div>
     <div class="up_qna_title_box">
         <p>제목</p>
-        <input type="text" name="up_qna_title" class="up_qna_title">
+        <input type="text" name="up_qna_title" class="up_qna_title" value="<%= row.title %>">
     </div>
     <div class="up_qna_cont_box">
-        <textarea name="up_qna_cont" class="up_qna_cont"></textarea>
+        <textarea name="up_qna_cont" class="up_qna_cont">value="<%= row.cont %>"</textarea>
     </div>
     <div class="up_qna_btn_box mt40">
-        <button type="reset" value="취소" class="up_qna_reset">취소</button>
+        <button type="reset" value="취소" class="up_qna_reset" onclick="javascript:location.href='/qna'">취소</button>
         <button type="submit" value="수정완료" class="up_qna_check">수정완료</button>
     </div>
   </form>
